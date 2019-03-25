@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 import { Link } from '../routes'
 
 import BaseLayout from '../components/layouts/BaseLayout'
-import axios from 'axios'
+import BasePage from '../components/BasePage'
 
 export default class portfolios extends Component {
   static async getInitialProps() {
@@ -32,8 +33,10 @@ export default class portfolios extends Component {
     const { posts } = this.props
     return (
       <BaseLayout>
-        <div>portfolios</div>
-        <ul>{this.renderPosts(posts)}</ul>
+        <BasePage>
+          <div>portfolios</div>
+          <ul>{this.renderPosts(posts)}</ul>
+        </BasePage>
       </BaseLayout>
     )
   }

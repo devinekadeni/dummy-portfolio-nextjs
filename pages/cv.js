@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import BaseLayout from '../components/layouts/BaseLayout'
 import BasePage from '../components/BasePage'
 
-export default class about extends Component {
+class Cv extends React.Component {
   render() {
     return (
       <BaseLayout>
-        <BasePage className="abou-page">
-          <div>about</div>
+        <BasePage>
+          <h3>i am cv page</h3>
         </BasePage>
       </BaseLayout>
     )

@@ -1,12 +1,15 @@
-import React, { Component } from "react"
+import React, { Component } from 'react'
 
-import BaseLayout from "../components/layouts/BaseLayout"
+import BaseLayout from '../components/layouts/BaseLayout'
+import BasePage from '../components/BasePage'
 
 export default class blogs extends Component {
   render() {
     return (
       <BaseLayout>
-        <div>blogs</div>
+        <BasePage>
+          <div>blogs</div>
+        </BasePage>
       </BaseLayout>
     )
   }
